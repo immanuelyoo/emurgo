@@ -40,7 +40,7 @@ contract employeeAttendance{
         dataEmployee[_ownerAddress].role=_role;
         dataEmployee[_ownerAddress].department=_department;
     }
-    
+
     function getEmployee(address _ownerAddress) public view returns(address OwnerAddress, string memory FirstName, string memory LastName, string memory Role, string memory Department, uint AttendanceValue){
         OwnerAddress =_ownerAddress;
         FirstName = dataEmployee[_ownerAddress].firstName;
